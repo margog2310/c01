@@ -6,7 +6,7 @@
 /*   By: mganchev <mganchev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 20:09:16 by mganchev          #+#    #+#             */
-/*   Updated: 2025/05/01 20:09:17 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/05/17 18:03:36 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 Zombie* newZombie (std::string name)
 {
     Zombie* newZombie = new Zombie(name);
-    newZombie->announce();
+    
     return (newZombie);
 }

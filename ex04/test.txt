@@ -3,3 +3,11 @@ This classic pangram contains every letter of the English alphabet,
 making it a popular choice for testing fonts, keyboards, and typing skills.
 Its simplicity and brevity have made it a timeless example
 in the world of linguistics and design.
+
+fox
+fox
+
+
+foxfox fox fox
+
+fox

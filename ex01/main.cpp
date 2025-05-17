@@ -2,18 +2,25 @@
 
 int main()
 {
-    int N;
-    std::string name;
+    Zombie  *horde;
+    Zombie  *anotherHorde;
 
-    std::cout << "Hello. I'm a Zombie Horde maker. Please specify how many zombies you'd like to create:" << std::endl;
-    std::cin >> N;
-    std::cout << "Thank you! What would you like to name your horde of zombies?" << std::endl;
-    std::cin >> name;
-    std::cout << "Thank you! Here's your brand new zombie Horde!" << std::endl;
-    Zombie* horde = zombieHorde(N, name);
-    for (int i = 0; i < N; i++)
+    horde = zombieHorde(3, "Horde");
+    for (int i = 0; i < 3; i++)
+    {
+        std::cout << "Zombie " << i + 1 << ": ";
         horde[i].announce();
-    std::cout << "Ok cool, you've had your fun. Now all of these zombies shall die." << std::endl;
+    }
+
+    anotherHorde = zombieHorde(5, "anotherHorde");
+    for (int i = 0; i < 5; i++)
+    {
+        std::cout << "Another zombie " << i + 1 << ": ";
+        anotherHorde[i].announce();
+    }
+
     delete[] horde;
-    std::cout << "Ok byeeeee!!!!!" << std::endl;
+    delete[] anotherHorde;
+
+    return 0;
 }

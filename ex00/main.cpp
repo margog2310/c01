@@ -6,7 +6,7 @@
 /*   By: mganchev <mganchev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 20:09:08 by mganchev          #+#    #+#             */
-/*   Updated: 2025/05/01 20:16:27 by mganchev         ###   ########.fr       */
+/*   Updated: 2025/05/17 18:04:16 by mganchev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ int main()
     randomChump("stackZombie");
     heapZombie->announce();
     delete heapZombie;
-    return (EXIT_SUCCESS);
+    return (0);
 }
